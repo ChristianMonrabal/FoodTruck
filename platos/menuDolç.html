@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menjar Dolç - Food Truck</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">🚚 Food Truck</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menú
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- Submenú de Menjar Fred -->
+                        <li class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="../platos/menuFred.html" id="fredDropdown">Menjar Fred</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../platos/fred1.html">Entrepà Ibèric</a></li>
+                                <li><a class="dropdown-item" href="../platos/fred2.html">Amanida Mediterrània</a></li>
+                                <li><a class="dropdown-item" href="../platos/fred3.html">Gaspatxo Andalús</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="../platos/menuCalent.html" id="calentDropdown">Menjar Calent</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../platos/calent1.html">Truita de Patates</a></li>
+                                <li><a class="dropdown-item" href="../platos/calent2.html">Croquetes de Pernil</a></li>
+                                <li><a class="dropdown-item" href="../platos/calent3.html">Entrepà Ibèric</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="../platos/menuDolç.html" id="dolçDropdown">Menjar Dolç</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../platos/dolç1.html">Crema Catalana</a></li>
+                                <li><a class="dropdown-item" href="../platos/dolç2.html">Xuixos de Girona</a></li>
+                                <li><a class="dropdown-item" href="../platos/dolç3.html">Pastís de Formatge</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="../platos/menuBegudes.html" id="begudesDropdown">Begudes</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../platos/beguda1.html">Refresc de Cola</a></li>
+                                <li><a class="dropdown-item" href="../platos/beguda2.html">Suc de Taronja Natural</a></li>
+                                <li><a class="dropdown-item" href="../platos/beguda3.html">Cafè Espresso</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="qui-som.html">Qui Som</a></li>
+            </ul>
+
+            <!-- Botón de Login con Dropdown -->
+            <div class="dropdown">
+                <button class="btn btn-outline-light dropdown-toggle" type="button" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+                <div class="dropdown-menu dropdown-menu-end p-3" style="width: 250px;">
+                    <form>
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Introdueix el teu email">
+                        </div>
+                        <div class="mb-2">
+                            <label for="password" class="form-label">Contrasenya</label>
+                            <input type="password" class="form-control" id="password" placeholder="********">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Accedir</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- BODY -->
+<div class="container my-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Inici</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Menjar Dolç</li>
+        </ol>
+    </nav>
+
+    <h1 class="mb-4">Menjar Dolç</h1>
+
+    <div class="row">
+        <!-- Carta 1: Crema Catalana -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="../img/dolc1.jpg" class="card-img-top" alt="Crema Catalana">
+                <div class="card-body">
+                    <h5 class="card-title">Crema Catalana</h5>
+                    <p class="card-text">La crema catalana és un postre tradicional amb una fina capa de sucre cremat.</p>
+                    <a href="../platos/dolç1.html" class="btn btn-primary">Veure més</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carta 2: Xuixos de Girona -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="../img/dolc2.jpg" class="card-img-top" alt="Xuixos de Girona">
+                <div class="card-body">
+                    <h5 class="card-title">Xuixos de Girona</h5>
+                    <p class="card-text">Els xuixos són una delícia de pasta farcida amb crema pastissera.</p>
+                    <a href="../platos/dolç2.html" class="btn btn-primary">Veure més</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carta 3: Pastís de Formatge -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="../img/dolc3.jpg" class="card-img-top" alt="Pastís de Formatge">
+                <div class="card-body">
+                    <h5 class="card-title">Pastís de Formatge</h5>
+                    <p class="card-text">Un pastís de formatge suau i cremós amb base de galeta.</p>
+                    <a href="../platos/dolç3.html" class="btn btn-primary">Veure més</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3 mt-4">
+    <p>Segueix-nos a:</p>
+    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

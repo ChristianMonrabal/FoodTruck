@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Truck</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">🚚 Food Truck</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menú
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="platos/menuFred.html" id="fredDropdown">Menjar Fred</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="platos/fred1.html">Entrepà Ibèric</a></li>
+                                <li><a class="dropdown-item" href="platos/fred2.html">Amanida Mediterrània</a></li>
+                                <li><a class="dropdown-item" href="platos/fred3.html">Gaspatxo Andalús</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="platos/menuCalent.html" id="calentDropdown">Menjar Calent</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="platos/calent1.html">Truita de Patates</a></li>
+                                <li><a class="dropdown-item" href="platos/calent2.html">Croquetes de Pernil</a></li>
+                                <li><a class="dropdown-item" href="platos/calent3.html">Entrepà Ibèric</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="platos/menuDolç.html" id="dolçDropdown">Menjar Dolç</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="platos/dolç1.html">Crema Catalana</a></li>
+                                <li><a class="dropdown-item" href="platos/dolç2.html">Xuixos de Girona</a></li>
+                                <li><a class="dropdown-item" href="platos/dolç3.html">Pastís de Formatge</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropend">
+                            <a class="dropdown-item dropdown-toggle" href="platos/menuBegudes.html" id="begudesDropdown">Begudes</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="platos/beguda1.html">Refresc de Cola</a></li>
+                                <li><a class="dropdown-item" href="platos/beguda2.html">Suc de Taronja Natural</a></li>
+                                <li><a class="dropdown-item" href="platos/beguda3.html">Cafè Espresso</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="qui-som.html">Qui Som</a></li>
+            </ul>
+
+            <div class="dropdown" id="loginDropdownContainer">
+                <button class="btn btn-outline-light dropdown-toggle" type="button" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+                <div class="dropdown-menu dropdown-menu-end p-3" style="width: 250px;">
+                    <form id="loginForm">
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Introdueix el teu email">
+                        </div>
+                        <div class="mb-2">
+                            <label for="password" class="form-label">Contrasenya</label>
+                            <input type="password" class="form-control" id="password" placeholder="********">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Accedir</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Dropdown de Cerrar Sesión -->
+            <div class="dropdown" id="logoutDropdown" style="display: none;">
+                <button class="btn btn-outline-light dropdown-toggle" type="button" id="logoutButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-user"></i> <span id="userEmail">Usuario</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#" id="logoutButtonText">Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <br><br>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider1.jpg" class="d-block w-100" alt="Food 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider2.jpg" class="d-block w-100" alt="Food 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider3.jpg" class="d-block w-100" alt="Food 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider4.jpg" class="d-block w-100" alt="Food 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <!-- Carta 1: Entrepà Ibèric (Menjar Fred) -->
+        <div class="col-md-3">
+            <div class="card">
+                <a href="platos/fred1.html">
+                    <img src="img/fred1.jpg" class="card-img-top" alt="Entrepà Ibèric">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Entrepà Ibèric</h5>
+                    <p class="card-text">Un clàssic de la cuina mediterrània amb pernil ibèric de primera qualitat.</p>
+                    <i class="fas fa-thumbs-up text-success"></i>
+                    <i class="fas fa-thumbs-down text-danger"></i>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Carta 2: Truita de Patates (Menjar Calent) -->
+        <div class="col-md-3">
+            <div class="card">
+                <a href="platos/calent1.html">
+                    <img src="img/calent1.jpg" class="card-img-top" alt="Truita de Patates">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Truita de Patates</h5>
+                    <p class="card-text">Una truita clàssica de patates, perfecta per a qualsevol moment del dia.</p>
+                    <i class="fas fa-thumbs-up text-success"></i>
+                    <i class="fas fa-thumbs-down text-danger"></i>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Carta 3: Crema Catalana (Menjar Dolç) -->
+        <div class="col-md-3">
+            <div class="card">
+                <a href="platos/dolç1.html">
+                    <img src="img/dolc1.jpg" class="card-img-top" alt="Crema Catalana">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Crema Catalana</h5>
+                    <p class="card-text">La crema catalana és un postre tradicional amb una fina capa de sucre cremat.</p>
+                    <i class="fas fa-thumbs-up text-success"></i>
+                    <i class="fas fa-thumbs-down text-danger"></i>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Carta 4: Suc de Taronja Natural (Begudes) -->
+        <div class="col-md-3">
+            <div class="card">
+                <a href="platos/beguda2.html">
+                    <img src="img/beguda2.jpg" class="card-img-top" alt="Suc de Taronja Natural">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Suc de Taronja Natural</h5>
+                    <p class="card-text">Un clàssic suc de Taronja Natural amb taronja fresca espremuda</p>
+                    <i class="fas fa-thumbs-up text-success"></i>
+                    <i class="fas fa-thumbs-down text-danger"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center mt-4">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Segueix-nos a les xarxes socials:</p>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var email = document.getElementById('email').value;
+            var loginButton = document.getElementById('loginDropdown');
+            var logoutDropdown = document.getElementById('logoutDropdown');
+            var userEmail = document.getElementById('userEmail');
+    
+            loginButton.innerHTML = '<i class="fas fa-sign-in-alt"></i> ' + email;
+            userEmail.textContent = email;
+    
+            logoutDropdown.style.display = 'block';
+            document.getElementById('loginDropdownContainer').style.display = 'none';
+        });
+    
+        document.getElementById('logoutButtonText').addEventListener('click', function() {
+            var loginButton = document.getElementById('loginDropdown');
+            var logoutDropdown = document.getElementById('logoutDropdown');
+    
+            logoutDropdown.style.display = 'none';
+            document.getElementById('loginDropdownContainer').style.display = 'block';
+        });
+    </script>
+    
+</body>
+</html>
